@@ -7,6 +7,7 @@
 	function loadURL(u) { 
 	    $.ajax({
 	        url: u,
+		dataType: 'jsonp',
 	        cache: false
 	    }).done(function(data) {
 	        $("#web-panel").html(data);
