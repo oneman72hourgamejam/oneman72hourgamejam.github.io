@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	function loadURL(u) { 
+	    $.ajax({
+	        url: u,
+	        cache: false
+	    }).done(function(data) {
+	        $("#web-panel").html(data);
+	    });
+	}
+
+	function aa(){
+		var aAlertMe = window.document.getElementById("main").children;
+		var all = aAlertMe[0].children;
+		var all2 = all[1].children;
+		var all3 = all2[0].innerText;
+		var res = all3.substring(0, 3);
+		console.log(res);
+		return res;
+	}
+
+    function sleep (time) {
+  		return new Promise((resolve) => setTimeout(resolve, time));
+	}
+
+	function run(){
+		document.getElementById("reset").disabled = true;
+    	loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=1");
+	    	sleep(1000).then(() => {
+	    		aa();
+	    		document.getElementById('1').value=parseInt(aa());
+	    		loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=2");
+	    		sleep(1000).then(() => {
+		    		aa();
+	    			document.getElementById('2').value=parseInt(aa());
+	    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=3");
+	    			sleep(1000).then(() => {
+			    		aa();
+	    				document.getElementById('3').value=parseInt(aa());
+		    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=4");
+		    			sleep(1000).then(() => {
+				    		aa();
+	    					document.getElementById('4').value=parseInt(aa());
+			    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=5");
+			    			sleep(1000).then(() => {
+					    		aa();
+	    						document.getElementById('5').value=parseInt(aa());
+				    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=6");
+				    			sleep(1000).then(() => {
+						    		aa();
+	    							document.getElementById('6').value=parseInt(aa());
+					    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=7");
+					    			sleep(1000).then(() => {
+							    		aa();
+							    		document.getElementById('7').value=parseInt(aa());
+						    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=8");
+						    			sleep(1000).then(() => {
+								    		aa();
+								    		document.getElementById('8').value=parseInt(aa());
+							    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=9");
+							    			sleep(1000).then(() => {
+									    		aa();
+									    		document.getElementById('9').value=parseInt(aa());
+								    			loadURL("https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=10");
+								    			sleep(1000).then(() => {
+										    		aa();
+										    		document.getElementById('10').value=parseInt(aa());
+										    		document.getElementById("reset").disabled = false;
+												});
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+	}
+
+	</script>
+  </head>
+
+  <body>
+  	<button type="button" id="reset" onclick="run()">Calculate Rating</button><input type="number"name="1" id="1" value='0'>
+  	<input type="number"name="2" id="2" value='0'>
+  	<input type="number"name="3" id="3" value='0'>
+  	<input type="number"name="4" id="4" value='0'>
+  	<input type="number"name="5" id="5" value='0'>
+  	<input type="number"name="6" id="6" value='0'>
+  	<input type="number"name="7" id="7" value='0'>
+  	<input type="number"name="8" id="8" value='0'>
+  	<input type="number"name="9" id="9" value='0'>
+  	<input type="number"name="10" id="10" value='0'>
+
+	<select name="mydropdown" id="url" onchange="loadURL(this.value);">
+	<option value="https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=3">opt3</option>
+	<option value="https://www.imdb.com/title/tt0993846/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=2">opt2</option>
+	<option value="https://oneman72hourgamejam.github.io/imdb_reviews_rating_calculator/">opt1</option>
+	</select>
+	<div class="container">
+        <div class="row">
+            <div class="col-sm">
+				<div id="web-panel"></div>
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+    </div>
+  </body>
+
+</html>
