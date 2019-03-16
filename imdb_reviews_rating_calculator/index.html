@@ -1,95 +1,262 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>IRRC</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="script.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	function loadURL(u, a) { 
+	    $.ajax({
+	        url: "https://www.imdb.com/title/" + u + "/reviews?sort=helpfulnessScore&dir=desc&ratingFilter=" + a,
+			dataType: "html",
+	        cache: false
+	    }).done(function(data) {
+	        $("#web-panel").html(data);
+	    });
+	}
+
+	function aa(){
+		var aAlertMe = window.document.getElementById("main").children;
+		var all = aAlertMe[0].children;
+		var all2 = all[1].children;
+		var all3 = all2[0].innerText;
+		var res = all3.substring(0, 3);
+		console.log(res);
+		return res;
+	}
+
+    function sleep (time) {
+  		return new Promise((resolve) => setTimeout(resolve, time));
+	}
+
+	function Calculate(){
+	  var oneStar = +document.getElementById('one').value;
+	  var twoStar = +document.getElementById('two').value;
+	  var threeStar = +document.getElementById('three').value;
+	  var fourStar = +document.getElementById('four').value;
+	  var fiveStar = +document.getElementById('five').value;
+	  var sixStar = +document.getElementById('six').value;
+	  var sevenStar = +document.getElementById('seven').value;
+	  var eightStar = +document.getElementById('eight').value;
+	  var nineStar = +document.getElementById('nine').value;
+	  var tenStar = +document.getElementById('ten').value;
+
+	  var oneTotal = oneStar * 1;
+	  var twoTotal = twoStar * 2;
+	  var threeTotal = threeStar * 3;
+	  var fourTotal = fourStar * 4;
+	  var fiveTotal = fiveStar * 5;
+	  var sixTotal = sixStar * 6;
+	  var sevenTotal = sevenStar * 7;
+	  var eightTotal = eightStar * 8;
+	  var nineTotal = nineStar * 9;
+	  var tenTotal = tenStar * 10;
+
+	  var totalClicks = (oneStar + twoStar + threeStar + fourStar + fiveStar + sixStar + sevenStar + eightStar + nineStar + tenStar);
+	  var totalStars = (oneTotal + twoTotal + threeTotal + fourTotal + fiveTotal + sixTotal + sevenTotal + eightTotal + nineTotal + tenTotal);
+	  var avgStars = (totalStars/totalClicks);
+
+	  var stars = '&#9733;';
+	  document.getElementById('resultTitle').style.display = 'block';
+	  document.getElementById('roundp').style.display = 'block';
+	  document.getElementById('avg').innerHTML = avgStars.toFixed(2);
+	  for(var i = 0 ;i<(Math.round(avgStars))-1;i++)
+	  {
+	    stars=stars+' &#9733;';
+	  }
+	  for(var i = (Math.round(avgStars))-1 ;i<10-1;i++)
+	  {
+	    stars=stars+' &#9734;';
+	  }
+	  document.getElementById('round').innerHTML = stars;
+	}
+
+	function Clear(){
+	  document.getElementById('one').value=0;
+	  document.getElementById('two').value=0;
+	  document.getElementById('three').value=0;
+	  document.getElementById('four').value=0;
+	  document.getElementById('five').value=0;
+	  document.getElementById('six').value=0;
+	  document.getElementById('seven').value=0;
+	  document.getElementById('eight').value=0;
+	  document.getElementById('nine').value=0;
+	  document.getElementById('ten').value=0;
+	  document.getElementById('avg').innerHTML = "";
+	  document.getElementById('round').innerHTML = "";
+	  document.getElementById('resultTitle').style.display = 'none';
+	  document.getElementById('roundp').style.display = 'none';
+	}
+
+	function clearBox()
+	{
+	    document.getElementById('web-panel').innerHTML = "";
+
+	}
+
+	function run(){
+		document.getElementById("reset").disabled = true;
+		var filmId = document.getElementById('zero').value;
+    	loadURL(filmId, "1");
+	    	sleep(1000).then(() => {
+	    		aa();
+	    		document.getElementById('one').value=parseInt(aa());
+    			loadURL(filmId, "2");
+	    		sleep(1000).then(() => {
+		    		aa();
+	    			document.getElementById('two').value=parseInt(aa());
+			    	loadURL(filmId, "3");
+	    			sleep(1000).then(() => {
+			    		aa();
+	    				document.getElementById('three').value=parseInt(aa());
+			    		loadURL(filmId, "4");
+		    			sleep(1000).then(() => {
+				    		aa();
+	    					document.getElementById('four').value=parseInt(aa());
+			    			loadURL(filmId, "5");
+			    			sleep(1000).then(() => {
+					    		aa();
+	    						document.getElementById('five').value=parseInt(aa());
+				    			loadURL(filmId, "6");
+				    			sleep(1000).then(() => {
+						    		aa();
+	    							document.getElementById('six').value=parseInt(aa());
+					    			loadURL(filmId, "7");
+					    			sleep(1000).then(() => {
+							    		aa();
+							    		document.getElementById('seven').value=parseInt(aa());
+						    			loadURL(filmId, "8");
+						    			sleep(1000).then(() => {
+								    		aa();
+								    		document.getElementById('eight').value=parseInt(aa());
+							    			loadURL(filmId, "9");
+							    			sleep(1000).then(() => {
+									    		aa();
+									    		document.getElementById('nine').value=parseInt(aa());
+								    			loadURL(filmId, "10");
+								    			sleep(1000).then(() => {
+										    		aa();
+										    		document.getElementById('ten').value=parseInt(aa());
+										    		document.getElementById("reset").disabled = false;
+										    		clearBox();
+										    		Calculate();
+												});
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+	}
+
+	</script>
   </head>
 
   <body>
+
+	
     <br>
     <div class="container">
-        <div class="row">
+    	<div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Film Id: </span>
+      </div>
+      <input type="text" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon0" name="zero" id="zero" value='id'>
+    </div>
+    <center>
+	  	<button type="button" class="btn btn-primary" id="reset" onclick="run()">Calculate Rating</button>
+        <br><br>
+        <h2 id="resultTitle" style="display:none"><small class="text-muted">Weighted Average Rating: </small><span id="avg" style="font-weight:normal"></span></h2>
+    <h2 id="roundp" style="display:none"><small class="text-muted"></small><span id="round" style="color:goldenrod;"></span></h2>
 
-            <div class="col-sm">
+    </center>
+        <br>
               <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1">1 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon1" name="one" id="one" value='116'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon1" name="one" id="one" value='0'>
     </div>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon2">2 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon2" name="two" id="two" value='40'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon2" name="two" id="two" value='0'>
     </div>
         <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon3">3 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon3" name="three" id="three" value='51'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon3" name="three" id="three" value='0'>
     </div>
             <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon4">4 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon4" name="four" id="four" value='47'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon4" name="four" id="four" value='0'>
     </div>
                 <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon5">5 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon5" name="five" id="five" value='53'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon5" name="five" id="five" value='0'>
     </div>
                     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon6">6 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon6" name="six" id="six" value='57'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon6" name="six" id="six" value='0'>
     </div>
                         <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon7">7 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon7" name="seven" id="seven" value='78'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon7" name="seven" id="seven" value='0'>
     </div>
                             <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon8">8 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon8" name="eight" id="eight" value='110'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon8" name="eight" id="eight" value='0'>
     </div>
                                 <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon9">9 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon9" name="nine" id="nine" value='179'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon9" name="nine" id="nine" value='0'>
     </div>
                                     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon10">10 &#9733;</span>
       </div>
-      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon10" name="ten" id="ten" value='326'>
+      <input type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon10" name="ten" id="ten" value='0'>
     </div>
+            
 
-            </div>
-            <div class="col-sm">
-<center><button type="button" class="btn btn-primary" onclick="Calculate()">Calculate Rating</button>
-        <button type="button" class="btn btn-secondary" onclick="Clear()">Reset</button>
-        <br><br>
-        <h2 id="resultTitle" style="display:none"><small class="text-muted">Weighted Average Rating: </small><span id="avg" style="font-weight:normal"></span></h2>
-    <h2 id="roundp" style="display:none"><small class="text-muted"></small><span id="round" style="color:goldenrod;"></span></h2>
-    </center>
-            </div>
-          </div>
+
     
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+				<div id="web-panel"></div>
 
-
-    
-    
   </body>
 
 </html>
