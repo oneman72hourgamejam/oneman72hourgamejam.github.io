@@ -1,11 +1,365 @@
 #EXTM3U
-#EXTINF:-1 ,National Geographic Wild HD
-http://188.35.9.5:10005/stolen/149u/imposter.rar
-#EXTINF:-1 ,Комедийное HD
-http://91.223.105.236:8081/hlsx/473/473.m3u8?id=1188&p=12326fa256d9bf86
+#EXTINF:-1 ,ORT Russia
+http://192.168.8.61:4000/ORT_Russia
+#EXTINF:-1 ,ORT UA
+http://192.168.8.61:4000/ORT_UA
+#EXTINF:-1 ,ORT SNG
+http://192.168.8.61:4000/ORT_SNG
+#EXTINF:-1 ,Russia 1
+http://192.168.8.61:4000/Russia_1
+#EXTINF:-1 ,Russia 2
+http://192.168.8.61:4000/Russia_2
+#EXTINF:-1 ,Russia K
+http://192.168.8.61:4000/Russia_K
+#EXTINF:-1 ,RTR Planeta
+http://192.168.8.61:4000/RTR_Planeta
+#EXTINF:-1 ,NTV
+http://192.168.8.61:4000/NTV
+#EXTINF:-1 ,TNT
+http://192.168.8.61:4000/TNT
+#EXTINF:-1 ,STS
+http://192.168.8.61:4000/STS
+#EXTINF:-1 ,Pyatnica
+http://192.168.8.61:4000/Pyatnica
+#EXTINF:-1 ,Ren-TV
+http://192.168.8.61:4000/Ren-TV
+#EXTINF:-1 ,Peretz
+http://192.168.8.61:4000/Peretz
+#EXTINF:-1 ,Domashniy
+http://192.168.8.61:4000/Domashniy
+#EXTINF:-1 ,TVC
+http://192.168.8.61:4000/TVC
+#EXTINF:-1 ,Zvezda
+http://192.168.8.61:4000/Zvezda
+#EXTINF:-1 ,Mir
+http://192.168.8.61:4000/Mir
+#EXTINF:-1 ,Mir+3
+http://192.168.8.61:4000/Mir+3
+#EXTINF:-1 ,TV3 Russia
+http://192.168.8.61:4000/TV3_Russia
+#EXTINF:-1 ,2x2
+http://192.168.8.61:4000/2x2
+#EXTINF:-1 ,2x2+2
+http://192.168.8.61:4000/2x2+2
+#EXTINF:-1 ,Comedy TV
+http://192.168.8.61:4000/Comedy_TV
+#EXTINF:-1 ,Park Razvlecheniy
+http://192.168.8.61:4000/Park_Razvlecheniy
+#EXTINF:-1 ,Telekafe
+http://192.168.8.61:4000/Telekafe
+#EXTINF:-1 ,Maksi-TV
+http://192.168.8.61:4000/Maksi-TV
+#EXTINF:-1 ,Bigudi
+http://192.168.8.61:4000/Bigudi
+#EXTINF:-1 ,Fashion-TV
+http://192.168.8.61:4000/Fashion-TV
+#EXTINF:-1 ,Zoom
+http://192.168.8.61:4000/Zoom
+#EXTINF:-1 ,Vremya
+http://192.168.8.61:4000/Vremya
+#EXTINF:-1 ,Kto est kto
+http://192.168.8.61:4000/Kto_est_kto
+#EXTINF:-1 ,Soverchenno Sekretno
+http://192.168.8.61:4000/Soverchenno_Sekretno
+#EXTINF:-1 ,Retro
+http://192.168.8.61:4000/Retro
+#EXTINF:-1 ,Pershiy
+http://192.168.8.61:4000/Pershiy
+#EXTINF:-1 ,Inter
+http://192.168.8.61:4000/Inter
+#EXTINF:-1 ,1+1
+http://192.168.8.61:4000/1+1
+#EXTINF:-1 ,2+2
+http://192.168.8.61:4000/2+2
+#EXTINF:-1 ,Ukraina
+http://192.168.8.61:4000/Ukraina
+#EXTINF:-1 ,STB
+http://192.168.8.61:4000/STB
+#EXTINF:-1 ,ICTV
+http://192.168.8.61:4000/ICTV
+#EXTINF:-1 ,TBi
+http://192.168.8.61:4000/TBi
+#EXTINF:-1 ,5 kanal
+http://192.168.8.61:4000/5_kanal
+#EXTINF:-1 ,Noviy
+http://192.168.8.61:4000/Noviy
+#EXTINF:-1 ,Tonis
+http://192.168.8.61:4000/Tonis
+#EXTINF:-1 ,Che-Pe Info
+http://192.168.8.61:4000/Che-Pe_Info
+#EXTINF:-1 ,KRT
+http://192.168.8.61:4000/KRT
+#EXTINF:-1 ,Solnce
+http://192.168.8.61:4000/Solnce
+#EXTINF:-1 ,Pro Vse
+http://192.168.8.61:4000/Pro_Vse
+#EXTINF:-1 ,Unian
+http://192.168.8.61:4000/Unian
+#EXTINF:-1 ,Kuy TV
+http://192.168.8.61:4000/Kuy_TV
+#EXTINF:-1 ,NLO-TV
+http://192.168.8.61:4000/NLO-TV
+#EXTINF:-1 ,Indigo
+http://192.168.8.61:4000/Indigo
+#EXTINF:-1 ,TET
+http://192.168.8.61:4000/TET
+#EXTINF:-1 ,Gamma
+http://192.168.8.61:4000/Gamma
+#EXTINF:-1 ,NTN
+http://192.168.8.61:4000/NTN
+#EXTINF:-1 ,K1
+http://192.168.8.61:4000/K1
+#EXTINF:-1 ,Mega
+http://192.168.8.61:4000/Mega
+#EXTINF:-1 ,K2
+http://192.168.8.61:4000/K2
+#EXTINF:-1 ,Dobro TV
+http://192.168.8.61:4000/Dobro_TV
+#EXTINF:-1 ,Eko TV
+http://192.168.8.61:4000/Eko_TV
+#EXTINF:-1 ,Planeta TV
+http://192.168.8.61:4000/Planeta_TV
+#EXTINF:-1 ,Telekanal 100
+http://192.168.8.61:4000/Telekanal_100
+#EXTINF:-1 ,2 kanal Lviv
+http://192.168.8.61:4000/2_kanal_Lviv
+#EXTINF:-1 ,ZIK
+http://192.168.8.61:4000/ZIK
+#EXTINF:-1 ,Chernomorka
+http://192.168.8.61:4000/Chernomorka
+#EXTINF:-1 ,KDTRK
+http://192.168.8.61:4000/KDTRK
+#EXTINF:-1 ,Kiev-TV
+http://192.168.8.61:4000/Kiev-TV
+#EXTINF:-1 ,Kultura UA
+http://192.168.8.61:4000/Kultura_UA
+#EXTINF:-1 ,Socialna Kraina
+http://192.168.8.61:4000/Socialna_Kraina
+#EXTINF:-1 ,Eskulap
+http://192.168.8.61:4000/Eskulap
+#EXTINF:-1 ,Pravo TV
+http://192.168.8.61:4000/Pravo_TV
+#EXTINF:-1 ,Glas
+http://192.168.8.61:4000/Glas
+#EXTINF:-1 ,Nadiya
+http://192.168.8.61:4000/Nadiya
+#EXTINF:-1 ,CNL
+http://192.168.8.61:4000/CNL
+#EXTINF:-1 ,Impact
+http://192.168.8.61:4000/Impact
+#EXTINF:-1 ,ATR
+http://192.168.8.61:4000/ATR
+#EXTINF:-1 ,TRO
+http://192.168.8.61:4000/TRO
+#EXTINF:-1 ,Belsat
+http://192.168.8.61:4000/Belsat
+#EXTINF:-1 ,RTVI
+http://192.168.8.61:4000/RTVI
+#EXTINF:-1 ,Chechnya
+http://192.168.8.61:4000/Chechnya
+#EXTINF:-1 ,TNV
+http://192.168.8.61:4000/TNV
+#EXTINF:-1 ,Discovery
+http://192.168.8.61:4000/Discovery
+#EXTINF:-1 ,Discovery Science
+http://192.168.8.61:4000/Discovery_Science
+#EXTINF:-1 ,Discovery World
+http://192.168.8.61:4000/Discovery_World
+#EXTINF:-1 ,Discovery Investigation
+http://192.168.8.61:4000/Discovery_Investigation
+#EXTINF:-1 ,Discovery TLC
+http://192.168.8.61:4000/Discovery_TLC
+#EXTINF:-1 ,Animal Planet
+http://192.168.8.61:4000/Animal_Planet
+#EXTINF:-1 ,Nat Geo
+http://192.168.8.61:4000/Nat_Geo
+#EXTINF:-1 ,Nat Geo Wild
+http://192.168.8.61:4000/Nat_Geo_Wild
+#EXTINF:-1 ,Viasat Explorer
+http://192.168.8.61:4000/Viasat_Explorer
+#EXTINF:-1 ,Viasat History
+http://192.168.8.61:4000/Viasat_History
+#EXTINF:-1 ,Viasat Nature
+http://192.168.8.61:4000/Viasat_Nature
+#EXTINF:-1 ,DaVinci Learning
+http://192.168.8.61:4000/DaVinci_Learning
+#EXTINF:-1 ,English Club TV
+http://192.168.8.61:4000/English_Club_TV
+#EXTINF:-1 ,24 Techno
+http://192.168.8.61:4000/24_Techno
+#EXTINF:-1 ,Nauka 2-0
+http://192.168.8.61:4000/Nauka_2-0
+#EXTINF:-1 ,Moya Planeta
+http://192.168.8.61:4000/Moya_Planeta
+#EXTINF:-1 ,Oruzhie
+http://192.168.8.61:4000/Oruzhie
+#EXTINF:-1 ,RTG-TV
+http://192.168.8.61:4000/RTG-TV
+#EXTINF:-1 ,Ohota i rybalka
+http://192.168.8.61:4000/Ohota_i_rybalka
+#EXTINF:-1 ,Ohotnik i rybolov
+http://192.168.8.61:4000/Ohotnik_i_rybolov
+#EXTINF:-1 ,Trofey
+http://192.168.8.61:4000/Trofey
+#EXTINF:-1 ,Usadba
+http://192.168.8.61:4000/Usadba
+#EXTINF:-1 ,Zdorovoe TV
+http://192.168.8.61:4000/Zdorovoe_TV
+#EXTINF:-1 ,Zoopark
+http://192.168.8.61:4000/Zoopark
+#EXTINF:-1 ,Pershiy Avtomobilniy
+http://192.168.8.61:4000/Pershiy_Avtomobilniy
+#EXTINF:-1 ,Drayv
+http://192.168.8.61:4000/Drayv
+#EXTINF:-1 ,Premiera
+http://192.168.8.61:4000/Premiera
+#EXTINF:-1 ,Kinoklub
+http://192.168.8.61:4000/Kinoklub
+#EXTINF:-1 ,Kinohit
+http://192.168.8.61:4000/Kinohit
+#EXTINF:-1 ,Kino Plus
+http://192.168.8.61:4000/Kino_Plus
+#EXTINF:-1 ,Nashe Kino
+http://192.168.8.61:4000/Nashe_Kino
+#EXTINF:-1 ,Dom Kino
+http://192.168.8.61:4000/Dom_Kino
+#EXTINF:-1 ,Russkiy Illuzion
+http://192.168.8.61:4000/Russkiy_Illuzion
+#EXTINF:-1 ,Illuzion Plus
+http://192.168.8.61:4000/Illuzion_Plus
+#EXTINF:-1 ,TV-21
+http://192.168.8.61:4000/TV-21
+#EXTINF:-1 ,Eurokino
+http://192.168.8.61:4000/Eurokino
+#EXTINF:-1 ,TV1000
+http://192.168.8.61:4000/TV1000
+#EXTINF:-1 ,TV1000 Action
+http://192.168.8.61:4000/TV1000_Action
+#EXTINF:-1 ,TV1000 Russkoe Kino
+http://192.168.8.61:4000/TV1000_Russkoe_Kino
+#EXTINF:-1 ,TV1000 Comedy
+http://192.168.8.61:4000/TV1000_Comedy
+#EXTINF:-1 ,Indiya
+http://192.168.8.61:4000/Indiya
+#EXTINF:-1 ,Feniks Kino
+http://192.168.8.61:4000/Feniks_Kino
+#EXTINF:-1 ,Enter Film
+http://192.168.8.61:4000/Enter_Film
+#EXTINF:-1 ,Vintazh
+http://192.168.8.61:4000/Vintazh
+#EXTINF:-1 ,Nastoyashee Strachnoe TV
+http://192.168.8.61:4000/Nastoyashee_Strachnoe_TV
+#EXTINF:-1 ,Sport 1 Ukraine
+http://192.168.8.61:4000/Sport_1_Ukraine
+#EXTINF:-1 ,X-Sport
+http://192.168.8.61:4000/X-Sport
+#EXTINF:-1 ,Football 1
+http://192.168.8.61:4000/Football_1
+#EXTINF:-1 ,Football 2
+http://192.168.8.61:4000/Football_2
+#EXTINF:-1 ,Eurosport
+http://192.168.8.61:4000/Eurosport
+#EXTINF:-1 ,Eurosport 2
+http://192.168.8.61:4000/Eurosport_2
+#EXTINF:-1 ,Sport
+http://192.168.8.61:4000/Sport
 #EXTINF:-1 ,Futbol
 http://192.168.8.61:4000/Futbol
 #EXTINF:-1 ,Futbol 2
 http://192.168.8.61:4000/Futbol_2
 #EXTINF:-1 ,Futbol 3
 http://192.168.8.61:4000/Futbol_3
+#EXTINF:-1 ,Sport Plus
+http://192.168.8.61:4000/Sport_Plus
+#EXTINF:-1 ,Sport Online
+http://192.168.8.61:4000/Sport_Online
+#EXTINF:-1 ,Basketbol
+http://192.168.8.61:4000/Basketbol
+#EXTINF:-1 ,Viasat Sport
+http://192.168.8.61:4000/Viasat_Sport
+#EXTINF:-1 ,Extreme Sports
+http://192.168.8.61:4000/Extreme_Sports
+#EXTINF:-1 ,Zhivi
+http://192.168.8.61:4000/Zhivi
+#EXTINF:-1 ,Malyatko
+http://192.168.8.61:4000/Malyatko
+#EXTINF:-1 ,Piksel
+http://192.168.8.61:4000/Piksel
+#EXTINF:-1 ,Plus Plus
+http://192.168.8.61:4000/Plus_Plus
+#EXTINF:-1 ,Karusel
+http://192.168.8.61:4000/Karusel
+#EXTINF:-1 ,Detskiy mir
+http://192.168.8.61:4000/Detskiy_mir-Teleklub
+#EXTINF:-1 ,Detskiy
+http://192.168.8.61:4000/Detskiy
+#EXTINF:-1 ,Nickelodeon
+http://192.168.8.61:4000/Nickelodeon
+#EXTINF:-1 ,Disney Channel
+http://192.168.8.61:4000/Disney_Channel
+#EXTINF:-1 ,Cartoon Network
+http://192.168.8.61:4000/Cartoon_Network
+#EXTINF:-1 ,Jim Jam
+http://192.168.8.61:4000/Jim_Jam
+#EXTINF:-1 ,M1
+http://192.168.8.61:4000/M1
+#EXTINF:-1 ,M2
+http://192.168.8.61:4000/M2
+#EXTINF:-1 ,A-One UA
+http://192.168.8.61:4000/A-One_UA
+#EXTINF:-1 ,Music Box UA
+http://192.168.8.61:4000/Music_Box_UA
+#EXTINF:-1 ,OTV
+http://192.168.8.61:4000/OTV
+#EXTINF:-1 ,OE
+http://192.168.8.61:4000/OE
+#EXTINF:-1 ,Ru Music
+http://192.168.8.61:4000/Ru_Music
+#EXTINF:-1 ,Muzyka
+http://192.168.8.61:4000/Muzyka
+#EXTINF:-1 ,Shanson TV
+http://192.168.8.61:4000/Shanson_TV
+#EXTINF:-1 ,MCM
+http://192.168.8.61:4000/MCM
+#EXTINF:-1 ,VH1 Europe
+http://192.168.8.61:4000/VH1_Europe
+#EXTINF:-1 ,VH1 Classic
+http://192.168.8.61:4000/VH1_Classic
+#EXTINF:-1 ,Mezzo
+http://192.168.8.61:4000/Mezzo
+#EXTINF:-1 ,112 UA
+http://192.168.8.61:4000/112_UA
+#EXTINF:-1 ,UBR
+http://192.168.8.61:4000/UBR
+#EXTINF:-1 ,Business
+http://192.168.8.61:4000/Business
+#EXTINF:-1 ,Pershiy Diloviy
+http://192.168.8.61:4000/Pershiy_Diloviy
+#EXTINF:-1 ,Bank TV
+http://192.168.8.61:4000/Bank_TV
+#EXTINF:-1 ,Rada
+http://192.168.8.61:4000/Rada
+#EXTINF:-1 ,Espresso
+http://192.168.8.61:4000/Espresso
+#EXTINF:-1 ,24 News
+http://192.168.8.61:4000/24_News
+#EXTINF:-1 ,News One
+http://192.168.8.61:4000/News_One
+#EXTINF:-1 ,Russia 24
+http://192.168.8.61:4000/Russia_24
+#EXTINF:-1 ,Life News
+http://192.168.8.61:4000/Life_News
+#EXTINF:-1 ,Dozhd
+http://192.168.8.61:4000/Dozhd
+#EXTINF:-1 ,Russia Today
+http://192.168.8.61:4000/Russia_Today
+#EXTINF:-1 ,Mir 24
+http://192.168.8.61:4000/Mir_24
+#EXTINF:-1 ,RBC
+http://192.168.8.61:4000/RBC
+#EXTINF:-1 ,Euronews
+http://192.168.8.61:4000/Euronews
+#EXTINF:-1 ,BBC World
+http://192.168.8.61:4000/BBC_World
+#EXTINF:-1 ,France 24
+http://192.168.8.61:4000/France_24
