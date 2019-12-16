@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1,ФУТБОЛ 1 UA
+http://45.67.230.146:8000/play/a01n/index.m3u8
+#EXTINF:-1,ФУТБОЛ 2 UA
+http://45.67.230.146:8000/play/a01o/index.m3u8
 #EXTINF:-1 ,ORT Russia
 http://192.168.8.61:4000/ORT_Russia
 #EXTINF:-1 ,ORT UA
