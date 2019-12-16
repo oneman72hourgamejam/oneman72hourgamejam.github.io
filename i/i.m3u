@@ -1,1 +1,11 @@
-1
+#EXTM3U
+#EXTINF:-1 ,National Geographic Wild HD
+http://188.35.9.5:10005/stolen/149u/imposter.rar
+#EXTINF:-1 ,Комедийное HD
+http://91.223.105.236:8081/hlsx/473/473.m3u8?id=1188&p=12326fa256d9bf86
+#EXTINF:-1 ,Futbol
+http://192.168.8.61:4000/Futbol
+#EXTINF:-1 ,Futbol 2
+http://192.168.8.61:4000/Futbol_2
+#EXTINF:-1 ,Futbol 3
+http://192.168.8.61:4000/Futbol_3
