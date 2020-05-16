@@ -13,15 +13,19 @@
 				<div class="row center">
 					<div class="col s12 m8 l8 center">	
 						<h4 id="Sign" style="color:white;" class="card-panel #0288d1 light-blue darken-2"><span class="white-text text-darken-2">SIGN</span></h4>
-						<h5>Statistic based on marriages: </h5>
+						<h5>Statistic based on marriages and divorces (normalized values): </h5>
 						<div id="chart"></div>
 						<ul class="collapsible">
 							<li>
-								<div class="collapsible-header"><i class="material-icons">info</i>Marriages chart:</div>
+								<div class="collapsible-header"><i class="material-icons">info</i>Total number of marriages for a particular sign:</div>
 								<div class="collapsible-body"><span id="Detail1s"><div id="chart1"></div></span></div>
 							</li>
 							<li>
-								<div class="collapsible-header"><i class="material-icons">info</i>Details</div>
+								<div class="collapsible-header"><i class="material-icons">info</i>Total number of divorces for a particular sign:</div>
+								<div class="collapsible-body"><span id="Detail1s"><div id="chart2"></div></span></div>
+							</li>
+							<li>
+								<div class="collapsible-header"><i class="material-icons">info</i>Details (only marriages)</div>
 								<div class="collapsible-body"><span id="Details">No information.</span></div>
 							</li>
 						</ul>
@@ -71,218 +75,338 @@
 
 				document.getElementById('Aries').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 
 						data: [483/690,690/690,549/690,642/690,514/690,544/690,549/690,506/690,458/690,484/690,507/690,478/690]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [41/96,66/96,40/96,96/96,39/96,42/96,52/96,63/96,52/96,58/96,42/96,36/96]
+						}]);
 					document.getElementById('Sign').innerHTML = "ARIES";
 					document.getElementById('Details').innerHTML = "{'aries': 483, 'taurus': 690, 'gemini': 549, 'cancer': 642, 'leo': 514, 'virgo': 544, 'libra': 549, 'scorpio': 506, 'sagittarius': 458, 'capricorn': 484, 'aquarius': 507, 'pisces': 478}";
 				});
 
 				document.getElementById('Taurus').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [526/700,642/700,627/700,700/700,526/700,565/700,645/700,578/700,476/700,496/700,467/700,458/700]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [54/77,67/77,62/77,77/77,38/77,25/77,41/77,51/77,63/77,41/77,38/77,53/77]
+						}]);
 					document.getElementById('Sign').innerHTML = "TAURUS";
 					document.getElementById('Details').innerHTML = "{'aries': 526, 'taurus': 642, 'gemini': 627, 'cancer': 700, 'leo': 526, 'virgo': 565, 'libra': 645, 'scorpio': 578, 'sagittarius': 476, 'capricorn': 496, 'aquarius': 467, 'pisces': 458}";
 				});
 
 				document.getElementById('Gemini').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [481/607,607/607,548/607,572/607,484/607,530/607,501/607,474/607,442/607,414/607,434/607,416/607]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [29/73,53/73,73/73,45/73,19/73,31/73,38/73,39/73,37/73,44/73,20/73,53/73]
+						}]);
 					document.getElementById('Sign').innerHTML = "GEMINI";
 					document.getElementById('Details').innerHTML = "{'aries': 481, 'taurus': 607, 'gemini': 548, 'cancer': 572, 'leo': 484, 'virgo': 530, 'libra': 501, 'scorpio': 474, 'sagittarius': 442, 'capricorn': 414, 'aquarius': 434, 'pisces': 416}";
 				});
 
 				document.getElementById('Cancer').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [506/664,664/664,619/664,629/664,533/664,570/664,546/664,527/664,522/664,462/664,482/664,441/664]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [40/85,46/85,39/85,85/85,28/85,35/85,31/85,44/85,45/85,39/85,38/85,44/85]
+						}]);
 					document.getElementById('Sign').innerHTML = "CANCER";
 					document.getElementById('Details').innerHTML = "{'aries': 506, 'taurus': 664, 'gemini': 619, 'cancer': 629, 'leo': 533, 'virgo': 570, 'libra': 546, 'scorpio': 527, 'sagittarius': 522, 'capricorn': 462, 'aquarius': 482, 'pisces': 441}";
 				});
 
 				document.getElementById('Leo').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [582/819,819/819,672/819,817/819,621/819,644/819,657/819,612/819,591/819,568/819,563/819,532/819]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [41/60,51/60,29/60,60/60,30/60,41/60,48/60,32/60,32/60,53/60,22/60,37/60]
+						}]);
 					document.getElementById('Sign').innerHTML = "LEO";
 					document.getElementById('Details').innerHTML = "{'aries': 582, 'taurus': 819, 'gemini': 672, 'cancer': 817, 'leo': 621, 'virgo': 644, 'libra': 657, 'scorpio': 612, 'sagittarius': 591, 'capricorn': 568, 'aquarius': 563, 'pisces': 532}";
 				});
 
 				document.getElementById('Virgo').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [501/639,613/639,594/639,639/639,567/639,583/639,520/639,561/639,446/639,497/639,476/639,454/639]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [19/51,42/51,20/51,51/51,11/51,13/51,19/51,33/51,24/51,21/51,34/51,37/51]
+						}]);
 					document.getElementById('Sign').innerHTML = "VIRGO";
 					document.getElementById('Details').innerHTML = "{'aries': 501, 'taurus': 613, 'gemini': 594, 'cancer': 639, 'leo': 567, 'virgo': 583, 'libra': 520, 'scorpio': 561, 'sagittarius': 446, 'capricorn': 497, 'aquarius': 476, 'pisces': 454}";
 				});
 
 				document.getElementById('Libra').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [456/590,564/590,590/590,589/590,546/590,476/590,538/590,461/590,444/590,444/590,443/590,425/590]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [61/71,68/71,44/71,71/71,29/71,35/71,18/71,23/71,62/71,34/71,38/71,38/71]
+						}]);
 					document.getElementById('Sign').innerHTML = "LIBRA";
 					document.getElementById('Details').innerHTML = "{'aries': 456, 'taurus': 564, 'gemini': 590, 'cancer': 589, 'leo': 546, 'virgo': 476, 'libra': 538, 'scorpio': 461, 'sagittarius': 444, 'capricorn': 444, 'aquarius': 443, 'pisces': 425}";
 				});
 
 				document.getElementById('Scorpio').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [473/649,649/649,599/649,593/649,525/649,550/649,532/649,499/649,485/649,466/649,471/649,444/649]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [27/53,48/53,36/53,53/53,34/53,20/53,37/53,41/53,41/53,40/53,32/53,28/53]
+						}]);
 					document.getElementById('Sign').innerHTML = "SCORPIO";
 					document.getElementById('Details').innerHTML = "{'aries': 473, 'taurus': 649, 'gemini': 599, 'cancer': 593, 'leo': 525, 'virgo': 550, 'libra': 532, 'scorpio': 499, 'sagittarius': 485, 'capricorn': 466, 'aquarius': 471, 'pisces': 444}";
 				});
 
 				document.getElementById('Sagittarius').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [469/642,642/642,590/642,576/642,474/642,536/642,538/642,498/642,457/642,431/642,483/642,376/642]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [44/83,53/83,31/83,83/83,22/83,40/83,31/83,55/83,40/83,40/83,45/83,52/83]
+						}]);
 					document.getElementById('Sign').innerHTML = "SAGITTARIUS";
 					document.getElementById('Details').innerHTML = "{'aries': 469, 'taurus': 642, 'gemini': 590, 'cancer': 576, 'leo': 474, 'virgo': 536, 'libra': 538, 'scorpio': 498, 'sagittarius': 457, 'capricorn': 431, 'aquarius': 483, 'pisces': 376}";
 				});
 
 				document.getElementById('Capricorn').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [514/617,603/617,611/617,617/617,538/617,523/617,560/617,532/617,515/617,497/617,416/617,423/617]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [49/91,49/91,48/91,91/91,29/91,39/91,36/91,49/91,49/91,42/91,32/91,57/91]
+						}]);
 					document.getElementById('Sign').innerHTML = "CAPRICORN";
 					document.getElementById('Details').innerHTML = "{'aries': 514, 'taurus': 603, 'gemini': 611, 'cancer': 617, 'leo': 538, 'virgo': 523, 'libra': 560, 'scorpio': 532, 'sagittarius': 515, 'capricorn': 497, 'aquarius': 416, 'pisces': 423}";
 				});
 
 				document.getElementById('Aquarius').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [470/612,612/612,575/612,596/612,474/612,544/612,486/612,477/612,439/612,418/612,436/612,426/612]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [28/58,36/58,29/58,58/58,20/58,13/58,29/58,31/58,44/58,30/58,30/58,35/58]
+						}]);
 					document.getElementById('Sign').innerHTML = "AQUARIUS";
 					document.getElementById('Details').innerHTML = "{'aries': 470, 'taurus': 612, 'gemini': 575, 'cancer': 596, 'leo': 474, 'virgo': 544, 'libra': 486, 'scorpio': 477, 'sagittarius': 439, 'capricorn': 418, 'aquarius': 436, 'pisces': 426}";
 				});
 
 				document.getElementById('Pisces').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [521/656,639/656,570/656,656/656,503/656,581/656,564/656,485/656,483/656,461/656,449/656,437/656]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [76/94,94/94,56/94,78/94,35/94,28/94,51/94,35/94,39/94,44/94,60/94,51/94]
+						}]);
 					document.getElementById('Sign').innerHTML = "PISCES";
 					document.getElementById('Details').innerHTML = "{'aries': 521, 'taurus': 639, 'gemini': 570, 'cancer': 656, 'leo': 503, 'virgo': 581, 'libra': 564, 'scorpio': 485, 'sagittarius': 483, 'capricorn': 461, 'aquarius': 449, 'pisces': 437}";
 				});
 
 				document.getElementById('AriesF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 
 						data: [447/545,482/545,545/545,474/545,440/545,493/545,489/545,431/545,436/545,445/545,390/545,384/545]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [27/52,52/52,34/52,28/52,47/52,8/52,48/52,27/52,34/52,37/52,37/52,46/52]
+						}]);
 					document.getElementById('Sign').innerHTML = "ARIES";
 					document.getElementById('Details').innerHTML = "{'aries': 447, 'taurus': 482, 'gemini': 545, 'cancer': 474, 'leo': 440, 'virgo': 493, 'libra': 489, 'scorpio': 431, 'sagittarius': 436, 'capricorn': 445, 'aquarius': 390, 'pisces': 384}";
 				});
 
 				document.getElementById('TaurusF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [361/427,398/427,410/427,415/427,399/427,427/427,422/427,390/427,387/427,381/427,334/427,334/427]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [16/37,22/37,15/37,17/37,26/37,11/37,17/37,24/37,27/37,37/37,25/37,24/37]
+						}]);
 					document.getElementById('Sign').innerHTML = "TAURUS";
 					document.getElementById('Details').innerHTML = "{'aries': 361, 'taurus': 398, 'gemini': 410, 'cancer': 415, 'leo': 399, 'virgo': 427, 'libra': 422, 'scorpio': 390, 'sagittarius': 387, 'capricorn': 381, 'aquarius': 334, 'pisces': 334}";
 				});
 
 				document.getElementById('GeminiF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [379/447,373/447,424/447,379/447,373/447,364/447,447/447,385/447,344/447,340/447,336/447,343/447]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [35/67,33/67,44/67,48/67,36/67,9/67,48/67,58/67,67/67,63/67,41/67,26/67]
+						}]);
 					document.getElementById('Sign').innerHTML = "GEMINI";
 					document.getElementById('Details').innerHTML = "{'aries': 379, 'taurus': 373, 'gemini': 424, 'cancer': 379, 'leo': 373, 'virgo': 364, 'libra': 447, 'scorpio': 385, 'sagittarius': 344, 'capricorn': 340, 'aquarius': 336, 'pisces': 343}";
 				});
 
 				document.getElementById('CancerF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [461/533,526/533,533/533,490/533,471/533,510/533,485/533,458/533,475/533,457/533,381/533,413/533]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [31/57,57/57,15/57,34/57,42/57,24/57,21/57,31/57,29/57,56/57,24/57,23/57]
+						}]);
 					document.getElementById('Sign').innerHTML = "CANCER";
 					document.getElementById('Details').innerHTML = "{'aries': 461, 'taurus': 526, 'gemini': 533, 'cancer': 490, 'leo': 471, 'virgo': 510, 'libra': 485, 'scorpio': 458, 'sagittarius': 475, 'capricorn': 457, 'aquarius': 381, 'pisces': 413}";
 				});
 
 				document.getElementById('LeoF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [434/487,479/487,475/487,449/487,453/487,487/487,456/487,446/487,365/487,414/487,369/487,433/487]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [51/62,52/62,50/62,38/62,61/62,17/62,62/62,55/62,39/62,46/62,53/62,33/62]
+						}]);
 					document.getElementById('Sign').innerHTML = "LEO";
 					document.getElementById('Details').innerHTML = "{'aries': 434, 'taurus': 479, 'gemini': 475, 'cancer': 449, 'leo': 453, 'virgo': 487, 'libra': 456, 'scorpio': 446, 'sagittarius': 365, 'capricorn': 414, 'aquarius': 369, 'pisces': 433}";
 				});
 
 				document.getElementById('VirgoF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [377/463,407/463,463/463,438/463,414/463,426/463,426/463,392/463,346/463,399/463,340/463,334/463]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [8/37,27/37,14/37,32/37,25/37,19/37,22/37,37/37,0/37,28/37,18/37,11/37]
+						}]);
 					document.getElementById('Sign').innerHTML = "VIRGO";
 					document.getElementById('Details').innerHTML = "{'aries': 377, 'taurus': 407, 'gemini': 463, 'cancer': 438, 'leo': 414, 'virgo': 426, 'libra': 426, 'scorpio': 392, 'sagittarius': 346, 'capricorn': 399, 'aquarius': 340, 'pisces': 334}";
 				});
 
 				document.getElementById('LibraF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [475/525,479/525,503/525,406/525,493/525,478/525,525/525,450/525,441/525,454/525,371/525,377/525]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [30/50,26/50,24/50,20/50,50/50,13/50,25/50,20/50,24/50,49/50,20/50,37/50]
+						}]);
 					document.getElementById('Sign').innerHTML = "LIBRA";
 					document.getElementById('Details').innerHTML = "{'aries': 475, 'taurus': 479, 'gemini': 503, 'cancer': 406, 'leo': 493, 'virgo': 478, 'libra': 525, 'scorpio': 450, 'sagittarius': 441, 'capricorn': 454, 'aquarius': 371, 'pisces': 377}";
 				});
 
 				document.getElementById('ScorpioF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [423/515,461/515,515/515,471/515,446/515,464/515,479/515,408/515,430/515,426/515,380/515,366/515]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [20/86,29/86,41/86,52/86,35/86,9/86,64/86,86/86,58/86,46/86,31/86,29/86]
+						}]);
 					document.getElementById('Sign').innerHTML = "SCORPIO";
 					document.getElementById('Details').innerHTML = "{'aries': 423, 'taurus': 461, 'gemini': 515, 'cancer': 471, 'leo': 446, 'virgo': 464, 'libra': 479, 'scorpio': 408, 'sagittarius': 430, 'capricorn': 426, 'aquarius': 380, 'pisces': 366}";
 				});
 
 				document.getElementById('SagittariusF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [437/504,494/504,504/504,439/504,443/504,429/504,472/504,421/504,440/504,403/504,361/504,365/504]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [25/55,37/55,35/55,39/55,41/55,20/55,49/55,55/55,35/55,36/55,50/55,41/55]
+						}]);
 					document.getElementById('Sign').innerHTML = "SAGITTARIUS";
 					document.getElementById('Details').innerHTML = "{'aries': 437, 'taurus': 494, 'gemini': 504, 'cancer': 439, 'leo': 443, 'virgo': 429, 'libra': 472, 'scorpio': 421, 'sagittarius': 440, 'capricorn': 403, 'aquarius': 361, 'pisces': 365}";
 				});
 
 				document.getElementById('CapricornF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [429/503,478/503,503/503,442/503,459/503,482/503,477/503,442/503,453/503,455/503,390/503,398/503]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [49/66,35/66,35/66,24/66,33/66,20/66,66/66,57/66,35/66,40/66,24/66,47/66]
+						}]);
 					document.getElementById('Sign').innerHTML = "CAPRICORN";
 					document.getElementById('Details').innerHTML = "{'aries': 429, 'taurus': 478, 'gemini': 503, 'cancer': 442, 'leo': 459, 'virgo': 482, 'libra': 477, 'scorpio': 442, 'sagittarius': 453, 'capricorn': 455, 'aquarius': 390, 'pisces': 398}";
 				});
 
 				document.getElementById('AquariusF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [412/493,493/493,463/493,465/493,418/493,420/493,478/493,435/493,434/493,460/493,407/493,418/493]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [40/74,44/74,70/74,46/74,62/74,20/74,74/74,55/74,58/74,49/74,45/74,49/74]
+						}]);
 					document.getElementById('Sign').innerHTML = "AQUARIUS";
 					document.getElementById('Details').innerHTML = "{'aries': 412, 'taurus': 493, 'gemini': 463, 'cancer': 465, 'leo': 418, 'virgo': 420, 'libra': 478, 'scorpio': 435, 'sagittarius': 434, 'capricorn': 460, 'aquarius': 407, 'pisces': 418}";
 				});
 
 				document.getElementById('PiscesF').addEventListener('click', function() {
 					chart.updateSeries([{
-						name: '%',
+						name: 'Marriages',
 						data: [312/391,371/391,391/391,378/391,371/391,365/391,374/391,364/391,372/391,351/391,305/391,341/391]
-					}]);
+					},{
+
+						name: 'Divorces',
+
+						data: [14/44,38/44,20/44,12/44,28/44,4/44,44/44,18/44,30/44,32/44,10/44,12/44]
+						}]);
 					document.getElementById('Sign').innerHTML = "PISCES";
 					document.getElementById('Details').innerHTML = "{'aries': 312, 'taurus': 371, 'gemini': 391, 'cancer': 378, 'leo': 371, 'virgo': 365, 'libra': 374, 'scorpio': 364, 'sagittarius': 372, 'capricorn': 351, 'aquarius': 305, 'pisces': 341}";
 				});
@@ -309,12 +433,19 @@
 					},
 					dataLabels: {
 						enabled: true,
+						style: {
+            fontSize: '10px'
+          },
 						formatter: function (val) {
 							return val.toFixed(2)*100 + "%";
 						}
 					},
 					series: [{
-						name: 'percent',
+						name: 'Marriages',
+						data: [0,0,0,0,0,0,0,0,0,0,0,0]
+					},
+					{
+						name: 'Divorces',
 						data: [0,0,0,0,0,0,0,0,0,0,0,0]
 					}],
 					/*title: {
@@ -359,7 +490,7 @@
 				chart.render();
 
 				var options2 = {
-					colors : ['#00897b'],
+					
 					chart: {
 						type: 'bar',
 						toolbar: {
@@ -388,8 +519,12 @@
 					},
 					series: [
 					{
-						name: 'Marriages',
-						data: [5456+6404,4658+6706,4487+5903,5660+6501,5260+7678,4762+6451,5452+5976,5269+6286,5208+6055,5408+6349,5303+5953,4295+6349]
+						name: 'Male',
+						data: [6404,6706,5903,6501,7678,6451,5976,6286,6055,6349,5953,6349]
+					},
+					{
+						name: 'Female',
+						data: [5456,4658,4487,5660,5260,4762,5452,5269,5208,5408,5303,4295]
 					}],
 					/*title: {
 						text: 'Statistic based on marriages: ',
@@ -430,6 +565,83 @@
 				var chart1 = new ApexCharts(document.querySelector("#chart1"), options2);
 
 				chart1.render();
+
+				var options3 = {
+					
+					chart: {
+						type: 'bar',
+						toolbar: {
+							show: false,
+							offsetX: 0,
+							offsetY: 0,
+							tools: {
+								download: true,
+								selection: true,
+								zoom: true,
+								zoomin: true,
+								zoomout: true,
+								pan: true,
+								reset: true | '<img src="/static/icons/reset.png" width="20">',
+								customIcons: []
+							},
+							autoSelected: 'zoom'
+						}
+					},
+
+					dataLabels: {
+						enabled: true,
+						style: {
+            fontSize: '10px'
+          }
+					},
+					series: [
+					{
+						name: 'Male',
+						data: [630,610,493,519,478,324,522,438,537,571,384,652]
+					},
+					{
+						name: 'Female',
+						data: [432,263,511,390,562,261,338,504,465,467,614,262]
+					}],
+					/*title: {
+						text: 'Statistic based on marriages: ',
+						floating: true,
+						align: 'center',
+						style: {
+							fontSize: '18px',
+							color: '#444'
+						}
+					},*/
+					yaxis: {
+						axisBorder: {
+							show: false
+						},
+						axisTicks: {
+							show: false,
+						},
+						labels: {
+							show: false
+							
+						}
+
+					},
+					xaxis: {
+						axisBorder: {
+							show: false
+						},
+						labels: {
+							style: {
+								fontSize: '18px'
+
+							}
+						},
+						categories: ['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces']
+					}
+				}
+
+				var chart2 = new ApexCharts(document.querySelector("#chart2"), options3);
+
+				chart2.render();
 			</script>
 		</body>
 		</html>
