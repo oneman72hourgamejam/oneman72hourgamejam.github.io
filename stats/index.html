@@ -13,20 +13,20 @@
 		<div class="row center">
 			<div class="col s12 m8 l8 center">	
 				<h4 id="Sign" style="color:white;" class="card-panel #0288d1 light-blue darken-2"><span class="white-text text-darken-2">SIGN</span></h4>
-				<h5>Statistic based on marriages and divorces (normalized values): </h5>
+				<h5>Statistic based on marriages and divorces (normalized values in %): </h5>
 				<div id="chart"></div>
 				<ul class="collapsible">
 					<li>
-						<div class="collapsible-header"><i class="material-icons">info</i>Total number of marriages for a particular sign:</div>
+						<div class="collapsible-header"><i class="material-icons">info</i>Total number of marriages for a particular sign (male/female, normalized values in %):</div>
 						<div class="collapsible-body"><span id="Detail1s"><div id="chart1"></div></span></div>
 					</li>
 					<li>
-						<div class="collapsible-header"><i class="material-icons">info</i>Total number of divorces for a particular sign:</div>
+						<div class="collapsible-header"><i class="material-icons">info</i>Total number of divorces for a particular sign (male/female, normalized values in %):</div>
 						<div class="collapsible-body"><span id="Detail1s"><div id="chart2"></div></span></div>
 					</li>
 					<li>
-						<div class="collapsible-header"><i class="material-icons">info</i>Details (only marriages)</div>
-						<div class="collapsible-body"><span id="Details">No information.</span></div>
+						<div class="collapsible-header"><i class="material-icons">info</i>Details (only marriages):</div>
+						<div class="collapsible-body"><span>Precision formula: <br>(Math.round(val/maxVal.toFixed(2)*100*100)/100)</span><br><br><span id="Details">No information.</span></div>
 					</li>
 				</ul>
 			</div>
@@ -46,6 +46,14 @@
 					<div class="col s12"  style="margin-bottom: -15px;"><a style="width: 90%;" class="waves-effect waves-light btn #0288d1 light-blue " id="Aquarius">Aquarius</a><br><br></div>
 					<div class="col s12"  style="margin-bottom: -15px;"><a style="width: 90%;" class="waves-effect waves-light btn #0288d1 light-blue " id="Pisces">Pisces</a><br><br></div>
 				</div>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header"><i class="material-icons">info</i>UPDATES:</div>
+						<div class="collapsible-body">
+							<span>- added divorce stats (20.05.2020)</span>
+						</div>
+					</li>
+				</ul>
 			</p></div>
 			<div class="col s12 m2 l2 center"><p>
 				<h4 class="blue-text text-darken-2">FEMALE</h4>
@@ -63,6 +71,12 @@
 					<div class="col s12"  style="margin-bottom: -15px;"><a style="width: 90%;" class="waves-effect waves-light btn #0288d1 light-blue " id="AquariusF">Aquarius</a><br><br></div>
 					<div class="col s12"  style="margin-bottom: -15px;"><a style="width: 90%;" class="waves-effect waves-light btn #0288d1 light-blue " id="PiscesF">Pisces</a><br><br></div>
 				</div>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header"><i class="material-icons">info</i>TODO:</div>
+						<div class="collapsible-body"><span>- RU localization<br>- More information about experiment</span></div>
+					</li>
+				</ul>
 			</p></div>
 		</div>
 	</div>				
@@ -82,7 +96,7 @@
 
 				name: 'Divorces',
 
-				data: [41/96,66/96,40/96,96/96,39/96,42/96,52/96,63/96,52/96,58/96,42/96,36/96]
+				data: [41/96,66/96,40/96,96/96,39/96,42/96,52/96,63/96,55/96,58/96,42/96,36/96]
 				}]);
 			document.getElementById('Sign').innerHTML = "ARIES";
 			document.getElementById('Details').innerHTML = "{'aries': 483, 'taurus': 690, 'gemini': 549, 'cancer': 642, 'leo': 514, 'virgo': 544, 'libra': 549, 'scorpio': 506, 'sagittarius': 458, 'capricorn': 484, 'aquarius': 507, 'pisces': 478}";
@@ -110,7 +124,7 @@
 
 				name: 'Divorces',
 
-				data: [29/73,53/73,73/73,45/73,19/73,31/73,38/73,39/73,37/73,44/73,20/73,53/73]
+				data: [29/73,53/73,73/73,45/73,19/73,31/73,41/73,42/73,42/73,44/73,21/73,53/73]
 				}]);
 			document.getElementById('Sign').innerHTML = "GEMINI";
 			document.getElementById('Details').innerHTML = "{'aries': 481, 'taurus': 607, 'gemini': 548, 'cancer': 572, 'leo': 484, 'virgo': 530, 'libra': 501, 'scorpio': 474, 'sagittarius': 442, 'capricorn': 414, 'aquarius': 434, 'pisces': 416}";
@@ -124,7 +138,7 @@
 
 				name: 'Divorces',
 
-				data: [40/85,46/85,39/85,85/85,28/85,35/85,31/85,44/85,45/85,39/85,38/85,44/85]
+				data: [40/85,49/85,39/85,85/85,28/85,35/85,31/85,44/85,47/85,39/85,38/85,44/85]
 				}]);
 			document.getElementById('Sign').innerHTML = "CANCER";
 			document.getElementById('Details').innerHTML = "{'aries': 506, 'taurus': 664, 'gemini': 619, 'cancer': 629, 'leo': 533, 'virgo': 570, 'libra': 546, 'scorpio': 527, 'sagittarius': 522, 'capricorn': 462, 'aquarius': 482, 'pisces': 441}";
@@ -138,7 +152,7 @@
 
 				name: 'Divorces',
 
-				data: [41/60,51/60,29/60,60/60,30/60,41/60,48/60,32/60,32/60,53/60,22/60,37/60]
+				data: [41/60,51/60,29/60,60/60,30/60,41/60,48/60,32/60,34/60,53/60,22/60,37/60]
 				}]);
 			document.getElementById('Sign').innerHTML = "LEO";
 			document.getElementById('Details').innerHTML = "{'aries': 582, 'taurus': 819, 'gemini': 672, 'cancer': 817, 'leo': 621, 'virgo': 644, 'libra': 657, 'scorpio': 612, 'sagittarius': 591, 'capricorn': 568, 'aquarius': 563, 'pisces': 532}";
@@ -166,7 +180,7 @@
 
 				name: 'Divorces',
 
-				data: [61/71,68/71,44/71,71/71,29/71,35/71,18/71,23/71,62/71,34/71,38/71,38/71]
+				data: [61/71,68/71,44/71,71/71,29/71,35/71,18/71,23/71,62/71,34/71,39/71,38/71]
 				}]);
 			document.getElementById('Sign').innerHTML = "LIBRA";
 			document.getElementById('Details').innerHTML = "{'aries': 456, 'taurus': 564, 'gemini': 590, 'cancer': 589, 'leo': 546, 'virgo': 476, 'libra': 538, 'scorpio': 461, 'sagittarius': 444, 'capricorn': 444, 'aquarius': 443, 'pisces': 425}";
@@ -180,7 +194,7 @@
 
 				name: 'Divorces',
 
-				data: [27/53,48/53,36/53,53/53,34/53,20/53,37/53,41/53,41/53,40/53,32/53,28/53]
+				data: [27/53,48/53,36/53,53/53,34/53,20/53,37/53,41/53,41/53,40/53,32/53,29/53]
 				}]);
 			document.getElementById('Sign').innerHTML = "SCORPIO";
 			document.getElementById('Details').innerHTML = "{'aries': 473, 'taurus': 649, 'gemini': 599, 'cancer': 593, 'leo': 525, 'virgo': 550, 'libra': 532, 'scorpio': 499, 'sagittarius': 485, 'capricorn': 466, 'aquarius': 471, 'pisces': 444}";
@@ -189,12 +203,12 @@
 		document.getElementById('Sagittarius').addEventListener('click', function() {
 			chart.updateSeries([{
 				name: 'Marriages',
-				data: [469/642,642/642,590/642,576/642,474/642,536/642,538/642,498/642,457/642,431/642,483/642,376/642]
+				data: [469/642,642/642,590/642,576/642,474/642,536/642,538/642,498/642,457/642,431/642,483/642,361/642]
 			},{
 
 				name: 'Divorces',
 
-				data: [44/83,53/83,31/83,83/83,22/83,40/83,31/83,55/83,40/83,40/83,45/83,52/83]
+				data: [44/83,53/83,31/83,83/83,22/83,40/83,31/83,55/83,40/83,40/83,46/83,52/83]
 				}]);
 			document.getElementById('Sign').innerHTML = "SAGITTARIUS";
 			document.getElementById('Details').innerHTML = "{'aries': 469, 'taurus': 642, 'gemini': 590, 'cancer': 576, 'leo': 474, 'virgo': 536, 'libra': 538, 'scorpio': 498, 'sagittarius': 457, 'capricorn': 431, 'aquarius': 483, 'pisces': 376}";
@@ -208,7 +222,7 @@
 
 				name: 'Divorces',
 
-				data: [49/91,49/91,48/91,91/91,29/91,39/91,36/91,49/91,49/91,42/91,32/91,57/91]
+				data: [49/91,49/91,48/91,91/91,29/91,39/91,36/91,50/91,49/91,42/91,32/91,57/91]
 				}]);
 			document.getElementById('Sign').innerHTML = "CAPRICORN";
 			document.getElementById('Details').innerHTML = "{'aries': 514, 'taurus': 603, 'gemini': 611, 'cancer': 617, 'leo': 538, 'virgo': 523, 'libra': 560, 'scorpio': 532, 'sagittarius': 515, 'capricorn': 497, 'aquarius': 416, 'pisces': 423}";
@@ -222,7 +236,7 @@
 
 				name: 'Divorces',
 
-				data: [28/58,36/58,29/58,58/58,20/58,13/58,29/58,31/58,44/58,30/58,30/58,35/58]
+				data: [28/58,36/58,29/58,58/58,20/58,13/58,29/58,32/58,44/58,30/58,30/58,35/58]
 				}]);
 			document.getElementById('Sign').innerHTML = "AQUARIUS";
 			document.getElementById('Details').innerHTML = "{'aries': 470, 'taurus': 612, 'gemini': 575, 'cancer': 596, 'leo': 474, 'virgo': 544, 'libra': 486, 'scorpio': 477, 'sagittarius': 439, 'capricorn': 418, 'aquarius': 436, 'pisces': 426}";
@@ -236,7 +250,7 @@
 
 				name: 'Divorces',
 
-				data: [76/94,94/94,56/94,78/94,35/94,28/94,51/94,35/94,39/94,44/94,60/94,51/94]
+				data: [76/94,94/94,56/94,78/94,35/94,28/94,53/94,35/94,39/94,44/94,60/94,54/94]
 				}]);
 			document.getElementById('Sign').innerHTML = "PISCES";
 			document.getElementById('Details').innerHTML = "{'aries': 521, 'taurus': 639, 'gemini': 570, 'cancer': 656, 'leo': 503, 'virgo': 581, 'libra': 564, 'scorpio': 485, 'sagittarius': 483, 'capricorn': 461, 'aquarius': 449, 'pisces': 437}";
@@ -251,7 +265,7 @@
 
 				name: 'Divorces',
 
-				data: [27/52,52/52,34/52,28/52,47/52,8/52,48/52,27/52,34/52,37/52,37/52,46/52]
+				data: [29/52,52/52,34/52,30/52,47/52,8/52,48/52,30/52,34/52,37/52,37/52,46/52]
 				}]);
 			document.getElementById('Sign').innerHTML = "ARIES";
 			document.getElementById('Details').innerHTML = "{'aries': 447, 'taurus': 482, 'gemini': 545, 'cancer': 474, 'leo': 440, 'virgo': 493, 'libra': 489, 'scorpio': 431, 'sagittarius': 436, 'capricorn': 445, 'aquarius': 390, 'pisces': 384}";
@@ -265,7 +279,7 @@
 
 				name: 'Divorces',
 
-				data: [16/37,22/37,15/37,17/37,26/37,11/37,17/37,24/37,27/37,37/37,25/37,24/37]
+				data: [16/37,22/37,15/37,17/37,28/37,11/37,17/37,24/37,27/37,37/37,25/37,24/37]
 				}]);
 			document.getElementById('Sign').innerHTML = "TAURUS";
 			document.getElementById('Details').innerHTML = "{'aries': 361, 'taurus': 398, 'gemini': 410, 'cancer': 415, 'leo': 399, 'virgo': 427, 'libra': 422, 'scorpio': 390, 'sagittarius': 387, 'capricorn': 381, 'aquarius': 334, 'pisces': 334}";
@@ -279,7 +293,7 @@
 
 				name: 'Divorces',
 
-				data: [35/67,33/67,44/67,48/67,36/67,9/67,48/67,58/67,67/67,63/67,41/67,26/67]
+				data: [35/67,33/67,44/67,48/67,39/67,9/67,48/67,58/67,67/67,63/67,41/67,26/67]
 				}]);
 			document.getElementById('Sign').innerHTML = "GEMINI";
 			document.getElementById('Details').innerHTML = "{'aries': 379, 'taurus': 373, 'gemini': 424, 'cancer': 379, 'leo': 373, 'virgo': 364, 'libra': 447, 'scorpio': 385, 'sagittarius': 344, 'capricorn': 340, 'aquarius': 336, 'pisces': 343}";
@@ -293,7 +307,7 @@
 
 				name: 'Divorces',
 
-				data: [31/57,57/57,15/57,34/57,42/57,24/57,21/57,31/57,29/57,56/57,24/57,23/57]
+				data: [31/57,57/57,16/57,34/57,42/57,24/57,21/57,33/57,29/57,56/57,24/57,23/57]
 				}]);
 			document.getElementById('Sign').innerHTML = "CANCER";
 			document.getElementById('Details').innerHTML = "{'aries': 461, 'taurus': 526, 'gemini': 533, 'cancer': 490, 'leo': 471, 'virgo': 510, 'libra': 485, 'scorpio': 458, 'sagittarius': 475, 'capricorn': 457, 'aquarius': 381, 'pisces': 413}";
@@ -307,7 +321,7 @@
 
 				name: 'Divorces',
 
-				data: [51/62,52/62,50/62,38/62,61/62,17/62,62/62,55/62,39/62,46/62,53/62,33/62]
+				data: [51/62,52/62,50/62,38/62,62/62,18/62,62/62,55/62,39/62,46/62,53/62,36/62]
 				}]);
 			document.getElementById('Sign').innerHTML = "LEO";
 			document.getElementById('Details').innerHTML = "{'aries': 434, 'taurus': 479, 'gemini': 475, 'cancer': 449, 'leo': 453, 'virgo': 487, 'libra': 456, 'scorpio': 446, 'sagittarius': 365, 'capricorn': 414, 'aquarius': 369, 'pisces': 433}";
@@ -321,7 +335,7 @@
 
 				name: 'Divorces',
 
-				data: [8/37,27/37,14/37,32/37,25/37,19/37,22/37,37/37,0/37,28/37,18/37,11/37]
+				data: [8/37,27/37,14/37,32/37,25/37,19/37,22/37,37/37,20/37,28/37,18/37,11/37]
 				}]);
 			document.getElementById('Sign').innerHTML = "VIRGO";
 			document.getElementById('Details').innerHTML = "{'aries': 377, 'taurus': 407, 'gemini': 463, 'cancer': 438, 'leo': 414, 'virgo': 426, 'libra': 426, 'scorpio': 392, 'sagittarius': 346, 'capricorn': 399, 'aquarius': 340, 'pisces': 334}";
@@ -349,7 +363,7 @@
 
 				name: 'Divorces',
 
-				data: [20/86,29/86,41/86,52/86,35/86,9/86,64/86,86/86,58/86,46/86,31/86,29/86]
+				data: [20/86,29/86,41/86,52/86,35/86,9/86,64/86,86/86,58/86,50/86,31/86,29/86]
 				}]);
 			document.getElementById('Sign').innerHTML = "SCORPIO";
 			document.getElementById('Details').innerHTML = "{'aries': 423, 'taurus': 461, 'gemini': 515, 'cancer': 471, 'leo': 446, 'virgo': 464, 'libra': 479, 'scorpio': 408, 'sagittarius': 430, 'capricorn': 426, 'aquarius': 380, 'pisces': 366}";
@@ -363,7 +377,7 @@
 
 				name: 'Divorces',
 
-				data: [25/55,37/55,35/55,39/55,41/55,20/55,49/55,55/55,35/55,36/55,50/55,41/55]
+				data: [25/55,37/55,36/55,39/55,41/55,20/55,49/55,55/55,36/55,36/55,50/55,41/55]
 				}]);
 			document.getElementById('Sign').innerHTML = "SAGITTARIUS";
 			document.getElementById('Details').innerHTML = "{'aries': 437, 'taurus': 494, 'gemini': 504, 'cancer': 439, 'leo': 443, 'virgo': 429, 'libra': 472, 'scorpio': 421, 'sagittarius': 440, 'capricorn': 403, 'aquarius': 361, 'pisces': 365}";
@@ -377,7 +391,7 @@
 
 				name: 'Divorces',
 
-				data: [49/66,35/66,35/66,24/66,33/66,20/66,66/66,57/66,35/66,40/66,24/66,47/66]
+				data: [49/66,35/66,36/66,24/66,33/66,20/66,66/66,57/66,36/66,40/66,24/66,47/66]
 				}]);
 			document.getElementById('Sign').innerHTML = "CAPRICORN";
 			document.getElementById('Details').innerHTML = "{'aries': 429, 'taurus': 478, 'gemini': 503, 'cancer': 442, 'leo': 459, 'virgo': 482, 'libra': 477, 'scorpio': 442, 'sagittarius': 453, 'capricorn': 455, 'aquarius': 390, 'pisces': 398}";
@@ -391,7 +405,7 @@
 
 				name: 'Divorces',
 
-				data: [40/74,44/74,70/74,46/74,62/74,20/74,74/74,55/74,58/74,49/74,45/74,49/74]
+				data: [42/74,44/74,70/74,46/74,62/74,20/74,74/74,55/74,58/74,49/74,45/74,49/74]
 				}]);
 			document.getElementById('Sign').innerHTML = "AQUARIUS";
 			document.getElementById('Details').innerHTML = "{'aries': 412, 'taurus': 493, 'gemini': 463, 'cancer': 465, 'leo': 418, 'virgo': 420, 'libra': 478, 'scorpio': 435, 'sagittarius': 434, 'capricorn': 460, 'aquarius': 407, 'pisces': 418}";
@@ -437,7 +451,7 @@
     fontSize: '10px'
   },
 				formatter: function (val) {
-					return val.toFixed(2)*100 + "%";
+					return (Math.round(val.toFixed(2)*100*100)/100) + "%";
 				}
 			},
 			series: [{
@@ -467,7 +481,8 @@
 				labels: {
 					show: false,
 					formatter: function (val) {
-					return val.toFixed(2)*100 + "%";
+					/*return (Math.round(val.toFixed(2)*100*100)/100) + " = (Math.round(" + val + ".toFixed(2)*100*100)/100)";*/
+					return (Math.round(val.toFixed(2)*100*100)/100) + "%";
 				}
 				}
 
@@ -515,16 +530,20 @@
 				enabled: true,
 				style: {
     fontSize: '10px'
-  }
+  },
+					formatter: function (val) {
+					/*return (Math.round(val.toFixed(2)*100*100)/100) + " = (Math.round(" + val + ".toFixed(2)*100*100)/100)";*/
+					return (Math.round(val.toFixed(2)*100*100)/100) + "%";
+				}
 			},
 			series: [
 			{
 				name: 'Male',
-				data: [6404,6706,5903,6501,7678,6451,5976,6286,6055,6349,5953,6349]
+				data: [6404/7678,6706/7678,5903/7678,6501/7678,7678/7678,6451/7678,5976/7678,6286/7678,6055/7678,6349/7678,5953/7678,6349/7678]
 			},
 			{
 				name: 'Female',
-				data: [5456,4658,4487,5660,5260,4762,5452,5269,5208,5408,5303,4295]
+				data: [5456/5660,4658/5660,4487/5660,5660/5660,5260/5660,4762/5660,5452/5660,5269/5660,5208/5660,5408/5660,5303/5660,4295/5660]
 			}],
 			/*title: {
 				text: 'Statistic based on marriages: ',
@@ -543,8 +562,11 @@
 					show: false,
 				},
 				labels: {
-					show: false
-					
+					show: false,
+					formatter: function (val) {
+					/*return (Math.round(val.toFixed(2)*100*100)/100) + " = (Math.round(" + val + ".toFixed(2)*100*100)/100)";*/
+					return (Math.round(val.toFixed(2)*100*100)/100) + "%";
+				}
 				}
 
 			},
@@ -592,16 +614,18 @@
 				enabled: true,
 				style: {
     fontSize: '10px'
-  }
+  },formatter: function (val) {
+					return (Math.round(val.toFixed(2)*100*100)/100) + "%";
+				}
 			},
 			series: [
 			{
 				name: 'Male',
-				data: [630,610,493,519,478,324,522,438,537,571,384,652]
+				data: [630/652,610/652,493/652,519/652,478/652,324/652,522/652,438/652,537/652,571/652,384/652,652/652]
 			},
 			{
 				name: 'Female',
-				data: [432,263,511,390,562,261,338,504,465,467,614,262]
+				data: [432/614,263/614,511/614,390/614,562/614,261/614,338/614,504/614,465/614,467/614,614/614,262/614]
 			}],
 			/*title: {
 				text: 'Statistic based on marriages: ',
@@ -620,8 +644,11 @@
 					show: false,
 				},
 				labels: {
-					show: false
-					
+					show: false,
+					formatter: function (val) {
+					/*return (Math.round(val.toFixed(2)*100*100)/100) + " = (Math.round(" + val + ".toFixed(2)*100*100)/100)";*/
+					return (Math.round(val.toFixed(2)*100*100)/100) + "%";
+				}
 				}
 
 			},
